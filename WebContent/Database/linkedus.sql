@@ -589,4 +589,11 @@ Effective verbal and written communication skills',
 '2016-04-08',
 'https://careers.microsoft.com/resumepreview.aspx?aid=218760&utm_source=linkedin');
 
+alter table Student
+add column job1 int(10),add column job2 int(10),add column job3 int(10),add column job4 int(10),add column job5 int(10);
+
+alter table student
+add column preferedInTime varchar(10),
+add column preferedOutTime varchar(10);
+
 
