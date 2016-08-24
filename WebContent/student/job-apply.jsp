@@ -35,6 +35,43 @@
 			return;
 		} else {
 			out.print("<script>alert('Your have applied to the job successfully!');document.location='job-listing.jsp';</script>");
+			// mail code
+			// Recipient's email ID needs to be mentioned.
+			// sets SMTP server properties
+			try{
+				Properties properties = new Properties();
+				properties.put("mail.smtp.host", "smtp.gmail.com");
+
+				properties.put("mail.smtp.port", 587);
+				properties.put("mail.smtp.auth", "true");
+				properties.put("mail.smtp.starttls.enable", "true");
+
+				// creates a new session with an authenticator
+				Authenticator auth = new Authenticator() {
+				    public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication("shaluravilla", "itucompany");
+				    }
+				};
+
+				Session session_mail = Session.getInstance(properties, auth);
+
+				// creates a new e-mail message
+				Message msg = new MimeMessage(session_mail);
+
+				msg.setFrom(new InternetAddress("shaluravilla"));
+				InternetAddress[] toAddresses = { new InternetAddress("shaluravilla@gmail.com") }; 
+				msg.setRecipients(Message.RecipientType.TO, toAddresses);
+				msg.setSubject("reg. your job application");
+				msg.setSentDate(new java.util.Date());
+				msg.setText("Thanks for expressing the interest in the position.Your application has been successfully received."); // to change
+
+				// sends the e-mail
+				Transport.send(msg);
+				}
+			catch (MessagingException mex) {
+				mex.printStackTrace();
+				}
+	
 		}
 	}
 %>
