@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jobs | LinkedUs.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../dist/css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../dist/img/favicon.png">
+
+<!-- Custom CSS -->
+<link
+	href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+	rel="stylesheet prefetch">
+<link href="../dist/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top drop-shadow" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        </button>
+        <span class="navbar-brand">Linked<strong>Us</strong>.org </span>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav text-uppercase">
+          <li class="dropdown">
+            <a href="#"
+						class="dropdown-toggle" data-toggle="dropdown">
+              <i
+							class="fa fa-user"></i>&nbsp;&nbsp; Profile <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="profile-view.html">
+                  View Profile
+                </a>
+              </li>
+              <li>
+                <a href="profile-edit.html">
+                  Edit Profile
+                </a>
+              </li>
+              <li>
+                <a href="upload.html">
+                  Upload Resume
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="job-listing.html">
+              <i class="fa fa-briefcase"></i>&nbsp;&nbsp;Jobs
+            </a>
+          </li>
+          <li>
+            <a href="account.html">
+              <i class="fa fa-gear"></i>&nbsp;&nbsp;Account
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- Page Content -->
+  
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <!-- #### Side Nav #### -->
+          <div id="sidenav">
+            <div class="panel">
+              
+              <div class="panel-body">
+                <form id="jobSearchForm" name="jobSearchForm" method="POST" action="/vsearch/j">
+                  <fieldset class="text-input-fields">
+                    <label class="control-label" for="">Job Title</label>
+                    <div class="">
+              <input type="text" class="form-control" id="" placeholder="">
+                       
+                    </div>
+                    <br>
+                    <label class="control-label" for="">Company</label>
+                    <div class="">
+              <input type="text" class="form-control" id="" placeholder="">
+                       
+                    </div>
+                    <br>
+                    <label class="control-label" for="">Location</label>
+                    <div class="">
+              <input type="text" class="form-control" id="" placeholder="">
+                       
+                    </div>
+                    <br>
+                  </fieldset>
+                  <div class="form-controls">
+                    
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</button>
+                    &nbsp;<input type="reset" class="btn btn-link" value="Reset">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-8">
+          <div class="panel" id="basics">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-10 col-sm-12">
+                  <h3 class="text-uppercase">Job Title</h3>
+                  <h4>Company Name</h4>
+                  <h5><i class="fa fa-map-marker"></i>&nbsp;San Jose, California, United States</h5>
+                  <h6 class="text-muted">Mar 14, 2016</h6>
+                 
+                </div>
+                <div class="col-md-2 col-sm-12 text-center">
+                  <h1>
+                    <a class="btn btn-primary btn-block" href="job-detail.htm" target="_blank">
+                      View
+                    </a>
+                  </h1>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-10 col-sm-12">
+                  <h3 class="text-uppercase">Job Title</h3>
+                  <h4>Company Name</h4>
+                  <h5><i class="fa fa-map-marker"></i>&nbsp;San Jose, California, United States</h5>
+                  <h6 class="text-muted">Mar 14, 2016</h6>
+                </div>
+                <div class="col-md-2 col-sm-12 text-center">
+                  <h1>
+                    <a class="btn btn-primary btn-block" href="job-detail.htm" target="_blank">
+                      View
+                    </a>
+                  </h1>
+                </div>
+              </div>
+              <hr>
+              <hr>
+            </div>
+          </div>
+          <!--Pagination-->
+          <div>
+            <ul class="pagination">
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li><a href="#fakelink">9</a></li>
+              <li><a href="#fakelink">10</a></li>
+              <li class="pagination-dropdown dropup">
+                <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fui-triangle-up"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#fakelink">10–20</a></li>
+                  <li><a href="#fakelink">20–30</a></li>
+                  <li><a href="#fakelink">40–50</a></li>
+                </ul>
+              </li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+          </div>
+          
+
+        </div>
+      </div>
+      <script>window.prettyPrint && prettyPrint();</script>
+    </div>
+  </section><!-- /.container -->
+
+  <!-- Bootstrap core JavaScript-->
+  
+<script src="../js/jquery.min.js"></script>
+  <script src="../js/vendor/jquery.min.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="../js/vendor/video.js"></script>
+  <script src="../js/flat-ui.min.js"></script>
+  <script src="../docs/assets/js/prettify.js"></script>
+  <script src="../docs/assets/js/application.js"></script>
+  <script>
+          videojs.options.flash.swf = "../js/vendors/video-js.swf"
+        </script>
+
+
+</body>
+</html>

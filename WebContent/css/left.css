@@ -1,0 +1,71 @@
+
+a {
+	text-decoration: none;
+}
+
+#link a {
+	color: #ffffff;
+	font-size: 12px
+}
+
+#link1 a {
+	font-size: 12pt;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#link2 a {
+	text-decoration: none;
+	margin: 20px;
+	color: #ffffff;
+}
+
+td {
+	font-size: 20px;
+}
+
+#font1 {
+	font-family: 'Glyphicons Halflings';
+	font-weight: bold;
+	font-size: 16px;
+	color: #ffffff;
+	margin: 10px;
+}
+
+#top {
+	position: absolute;
+	font-size: 46px;
+	top: 78px;
+	left: 246px;
+	width: 240px;
+	font-weight: bold;
+}
+
+#reg {
+	font-family: 'Glyphicons Halflings';
+	color: #ffffff;
+}
+
+#font {
+	font-family: 'Glyphicons Halflings';
+	font-size: 36px;
+	color: #993300;
+}
+
+body {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#reg2 {
+	font-family: 'Glyphicons Halflings';
+	font-size: 13px;
+}
+
+#reg3 {
+	font-family: 'Glyphicons Halflings';
+	font-size: 15px;
+	color: #ffffff;
+}

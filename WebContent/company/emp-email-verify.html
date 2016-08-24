@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>verify</title>
+
+<link rel="shortcut icon" href="../dist/img/favicon.png">
+<script src="../js/default.js"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../dist/css/normalize.css">
+<link rel="stylesheet" href="../dist/css/login.css">
+<link href="../dist/css/style.css" rel="stylesheet">
+
+<link
+	href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+	rel="stylesheet prefetch">
+
+<style type="text/css">
+  body {
+    background-color: #fff;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    width: auto;
+    font-family: "Open Sans";
+    font-weight: 300
+  }
+</style>
+<body>
+
+<form accept-charset="utf-8" action="emp-email-verify.jsp"
+								class="simform" name="form">
+                <div class="sminputs">
+                  <div class="input full">
+                    <label class="string optional" for="user-name">ITU Email*</label>
+                    <input class="string optional" maxlength="255" id="user-email" 
+											name="email" placeholder="ITU Email (e.g. example@students.itu.edu)" type="email" 
+											size="50" />
+                  </div>
+                </div>
+                <div class="simform__actions">
+                  <input class="btn btn-primary" name="commit" type="submit"
+										value="Send Password" />
+				</div>						
+</form>
+</body>
