@@ -34,7 +34,7 @@
 			out.print("<script>alert('Job Application Failed.Please try again later');document.location='job-listing.jsp';</script>");
 			return;
 		} else {
-			out.print("<script>alert('Your have applied to the job successfully!');document.location='job-listing.jsp';</script>");
+			out.print("<script>alert('You have applied to the job successfully!');document.location='job-listing.jsp';</script>");
 			// mail code
 			// Recipient's email ID needs to be mentioned.
 			// sets SMTP server properties
