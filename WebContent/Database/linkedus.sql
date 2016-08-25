@@ -67,8 +67,14 @@ CREATE TABLE `Admin` (
   PRIMARY KEY (`adminID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7;
 
-
-
+DROP TABLE IF EXISTS `JobApplications`;
+CREATE TABLE `JobApplications` (
+  `jobID` int(10) unsigned NOT NULL,
+  `recEmail` varchar(50) NOT NULL,
+  `stdEmail` varchar(50) NOT NULL,
+  `firstName` varchar(50) NOT NULL,
+  `lastName` varchar(50) NOT NULL
+) ;
 
 
 
@@ -595,5 +601,6 @@ add column job1 int(10),add column job2 int(10),add column job3 int(10),add colu
 alter table student
 add column preferedInTime varchar(10),
 add column preferedOutTime varchar(10);
+
 
 
