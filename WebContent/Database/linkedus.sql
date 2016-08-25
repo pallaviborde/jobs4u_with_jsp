@@ -28,6 +28,14 @@ CREATE TABLE `Student` (
   `workJobResponsibility` LONGTEXT,
   `projectName` varchar(100),
   `projectDescription` LONGTEXT,
+  `isTempFlag` varchar(10),
+  `job1` int(10),
+  `job2` int(10),
+  `job3` int(10),
+  `job4` int(10),
+  `job5` int(10),
+  `preferedInTime` varchar(10),
+  `preferedOutTime` varchar(10),
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7;
 
@@ -133,7 +141,7 @@ Participate in the Internet of things System design group. Developing test
 cases for every parts can match and work well.',
 'Zhaorui Electronic',
 'I leaded the team to construct the network workstation for companies (include Agricultural Development Bank of China, Ever Growing Bank Co.,LTD and so on). We submited our tender and won them.
-I made the tender file, design the construction of the workstation.');
+I made the tender file, design the construction of the workstation.','','','','','','','','');
 
 insert into student values(
 'elizabeth@students.itu.edu',
@@ -595,12 +603,6 @@ Effective verbal and written communication skills',
 '2016-04-08',
 'https://careers.microsoft.com/resumepreview.aspx?aid=218760&utm_source=linkedin');
 
-alter table Student
-add column job1 int(10),add column job2 int(10),add column job3 int(10),add column job4 int(10),add column job5 int(10);
-
-alter table student
-add column preferedInTime varchar(10),
-add column preferedOutTime varchar(10);
 
 
 
