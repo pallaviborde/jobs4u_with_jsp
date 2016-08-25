@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8" %>
-<%@ page import="com.linkedus.db.Data"%>
+<%@ page import="com.jobs4U.db.Data"%>
 <%
 session.getAttribute("admin");
 String strJobid=(String)request.getParameter("jobid");

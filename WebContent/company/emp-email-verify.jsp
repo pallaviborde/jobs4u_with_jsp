@@ -9,15 +9,15 @@
 
 
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="com.linkedus.db.Data"%>
-<%@ page import="com.linkedus.db.Conn"%>
+<%@ page import="com.jobs4U.db.Data"%>
+<%@ page import="com.jobs4U.db.Conn"%>
 <%@ page import="java.sql.*"%>
 
 <!-- to here -->
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="data" class="com.linkedus.db.Data" scope="page"/>
+<jsp:useBean id="data" class="com.jobs4U.db.Data" scope="page"/>
 <html>
 <head>
 <title>verify</title>
@@ -96,7 +96,7 @@
       // Set Subject: header field
       message.setSubject("Your temporary password");
       // Now set the actual message
-      String msgStr = "Dear Recruiter," + "\n\n" + "Following is your temporary password. Please make sure you change password once logged in." + "\n" + "Your password: " + cutKey +"\n\n" + "Click following link to log in to jobs4u:" + "\n" + "http://localhost:8080/linkedus/company/emp-login-signup.html";
+      String msgStr = "Dear Recruiter," + "\n\n" + "Following is your temporary password. Please make sure you change password once logged in." + "\n" + "Your password: " + cutKey +"\n\n" + "Click following link to log in to jobs4u:" + "\n" + "http://localhost:8080/Jobs4U/company/emp-login-signup.html";
       message.setText(msgStr);
       // Send message
       Transport.send(message);

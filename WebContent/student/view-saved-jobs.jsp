@@ -1,12 +1,12 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="com.linkedus.db.Conn"%>
+<%@ page import="com.jobs4U.db.Conn"%>
 <%@ page import="java.sql.*"%>
-<%@ page import="com.linkedus.db.Data"%>
+<%@ page import="com.jobs4U.db.Data"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Jobs | LinkedUs.org</title>
+<title>Jobs | Jobs4U</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Loading Bootstrap -->

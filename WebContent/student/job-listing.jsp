@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="com.linkedus.db.Conn"%>
+<%@ page import="com.jobs4U.db.Conn"%>
 <%@ page import="java.sql.*"%>
-<%@ page import="com.linkedus.db.Data"%>
+<%@ page import="com.jobs4U.db.Data"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<jsp:useBean id="data" class="com.linkedus.db.Data" scope="page" />
+<jsp:useBean id="data" class="com.jobs4U.db.Data" scope="page" />
 <html>
 <head>
 <title>login</title>

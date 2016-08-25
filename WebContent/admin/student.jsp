@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="java.sql.*"%>
-<%@ page import="com.linkedus.db.Conn"%>
+<%@ page import="com.jobs4U.db.Conn"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

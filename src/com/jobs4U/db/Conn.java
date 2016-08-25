@@ -1,4 +1,4 @@
-package com.linkedus.db;
+package com.jobs4U.db;
 
 import java.sql.*;
 
@@ -7,7 +7,7 @@ public class Conn {
 	private Statement stmt;
 	private ResultSet rs;
 	private static final String drivername = "com.mysql.jdbc.Driver";
-	private static final String url = "jdbc:mysql://localhost:3306/linkedus?user=root&password=root";
+	private static final String url = "jdbc:mysql://localhost:3306/jobs4U?user=root&password=root";
 
 
 	public static synchronized Connection getCon() throws Exception {

@@ -1,7 +1,8 @@
-package com.linkedus.db;
+package com.jobs4U.db;
 
 import java.sql.*;
-import com.linkedus.db.Conn;
+
+import com.jobs4U.db.Conn;
 
 public class Data {
 

@@ -9,15 +9,15 @@
 
 
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="com.linkedus.db.Data"%>
-<%@ page import="com.linkedus.db.Conn"%>
+<%@ page import="com.jobs4U.db.Data"%>
+<%@ page import="com.jobs4U.db.Conn"%>
 <%@ page import="java.sql.*"%>
 
 <!-- to here -->
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="data" class="com.linkedus.db.Data" scope="page"/>
+<jsp:useBean id="data" class="com.jobs4U.db.Data" scope="page"/>
 <html>
 <head>
 <title>verify</title>

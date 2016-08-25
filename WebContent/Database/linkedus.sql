@@ -180,7 +180,7 @@ Participate in the Internet of things System design group. Developing test
 cases for every parts can match and work well.',
 'Zhaorui Electronic',
 'I leaded the team to construct the network workstation for companies (include Agricultural Development Bank of China, Ever Growing Bank Co.,LTD and so on). We submited our tender and won them.
-I made the tender file, design the construction of the workstation.');
+I made the tender file, design the construction of the workstation.','',1,2,3,4,5,'','');
 
 
 
@@ -217,7 +217,7 @@ Also development of programs for different mobile platforms as well as the devel
 firmware for phones on the Bada OS and Android. Development and implementation of new
 technologies and software.',
 'Social network for family',
-'Social network for family');
+'Social network for family','',1,2,3,4,5,'','');
 
 
 insert into student values(
@@ -257,7 +257,7 @@ overall efficiency of customer service skills.',
 'Junior Achievement',
 'Taught first grade class at West Mercer Elementary School about primary 
 economics topics which included, but were not limited to wants versus needs,
- money, goods and services, entrepreneurship, and businesses.');
+ money, goods and services, entrepreneurship, and businesses.','',1,2,3,4,5,'','');
  
  insert into student values(
 'tracey@students.itu.edu',
@@ -296,7 +296,7 @@ overall efficiency of customer service skills.',
 'Junior Achievement',
 'Taught first grade class at West Mercer Elementary School about primary 
 economics topics which included, but were not limited to wants versus needs,
- money, goods and services, entrepreneurship, and businesses.');
+ money, goods and services, entrepreneurship, and businesses.','',1,2,3,4,5,'','');
  
  insert into student values(
 'lisa@students.itu.edu',
@@ -331,7 +331,7 @@ Also development of programs for different mobile platforms as well as the devel
 firmware for phones on the Bada OS and Android. Development and implementation of new
 technologies and software.',
 'Social network for family',
-'Social network for family');
+'Social network for family','',1,2,3,4,5,'','');
 
  
 
@@ -368,7 +368,7 @@ Also development of programs for different mobile platforms as well as the devel
 firmware for phones on the Bada OS and Android. Development and implementation of new
 technologies and software.',
 'Social network for family',
-'Social network for family');
+'Social network for family','',1,2,3,4,5,'','');
 
 
 insert into job(recEmail,jobTitle,companyName,companyWebsite,location,
