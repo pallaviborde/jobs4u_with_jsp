@@ -16,7 +16,7 @@
             return;
     	}
 		if(strPassword.length() > 15 || strPassword.length() < 8){
-			out.print("<script>alert('Passowrd Length should be minimun 8 and can not exceed 15.')</script>");
+			out.print("<script>alert('Passowrd Length should be minimun 8 and can not exceed 15.');document.location='emp-login-signup.html';</script>");
 			return;
 		}
 		int intT = 0;
