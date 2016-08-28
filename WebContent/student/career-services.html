@@ -1,17 +1,17 @@
-<%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="com.linkedus.db.Conn"%>
-<%@ page import="java.sql.*"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
-<head >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../dist/css/style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
- 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!--  -->
+<html>
+<head lang="en">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="../js/career-service.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <script>
+  
+ </script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Career Services | Jobs4U</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Loading Bootstrap -->
     <link href="../dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,20 +24,10 @@
 <link
 	href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
 	rel="stylesheet prefetch">
-
-  <script>
-  $( function() {
-    $("#datepicker").datepicker();
-  } );
-  </script>
+<link href="../dist/css/style.css" rel="stylesheet">
 </head>
 <body>
-<%
-Conn con=new Conn();
-String strEmail=(String)session.getAttribute("email");
-ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
-        if(rs.next()){    
-%>
+
 <nav class="navbar navbar-default navbar-fixed-top drop-shadow" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -147,12 +137,12 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 						</div>
 						<div class="panel-body">
 							<div class="row">
-							<p> Meeting Date:
-									<input type="text" id="datepicker"> </p>
 								<div class="col-sm-12">
-									
+									<h4 class="text-uppercase">
+									<label for="meeting"> Meeting Date:
+									<!-- calendar code -->
 									Drop-in hours are :<br>
-									Tuesdays from 10 am to 12 pm PST and Thursdays from 3:30 pm to 5:30 pm PST. <br>
+									Tuesdays from 10 am to 12 pm PST and Thursdays from 3:30 pm to 5:30 pm PST. <br></h4>
 									<h4>
 									 Schedule An appointment
 									</h4>
@@ -161,6 +151,11 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 									
 								</div>
 								<input type="text" id="datepicker" style="">
+								
+								<input type="submit" id="datepicker" style=""> 
+								
+								
+								
 							</div>
 						</div>
 					</div>
@@ -200,11 +195,7 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 	videojs.options.flash.swf = "../js/vendors/video-js.swf"
   </script>
 
-<%
-        }else{
-            out.print("<script>alert('Failed to Connect to Database.');document.location='profile-view.jsp';</script>");
-        }
-%>
+
 
 </body>
 </html>
