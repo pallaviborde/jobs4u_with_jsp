@@ -43,7 +43,7 @@
 					data-target="#navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 				</button>
-				<span class="navbar-brand"><strong><a href="http://localhost:8080/linkedus">Jobs4U</a></strong>
+				<span class="navbar-brand"><strong><a href="http://localhost:8080/Jobs4U/student/profile-view.jsp">Jobs4U</a></strong>
 				</span>
 			</div>
 
@@ -105,7 +105,7 @@
 										<button type="submit" class="btn btn-primary">
 											<i class="fa fa-search"></i>&nbsp;&nbsp;Search
 										</button>
-										&nbsp;<input type="reset" class="btn btn-link" value="Reset">
+										&nbsp;<button type="reset" class="btn btn-link" value="Reset"></button>
 									</div>
 								</form>
 							</div>
@@ -126,19 +126,19 @@
 								Conn con = new Conn();
 								ResultSet rs = con.getRs("SELECT * FROM job");
 								if (strJobTitle != "" && strCompanyName != "" && strLocation != ""){
-									rs = con.getRs("SELECT * FROM job WHERE jobTitle='"+strJobTitle+"' AND companyName='"+strCompanyName+"' AND location='"+strLocation+"'");
+									rs = con.getRs("SELECT * FROM job WHERE jobTitle LIKE '"+"%"+strJobTitle+"%"+"' AND companyName LIKE '"+"%"+strCompanyName+"%"+"' AND location LIKE '"+"%"+strLocation+"%"+"'");
 								}else if (strJobTitle != "" && strCompanyName != ""){
-									rs = con.getRs("SELECT * FROM job WHERE jobTitle='"+strJobTitle+"' AND companyName='"+strCompanyName+"'");
+									rs = con.getRs("SELECT * FROM job WHERE jobTitle LIKE '"+"%"+strJobTitle+"%"+"' AND companyName LIKE '"+"%"+strCompanyName+"%"+"'");
 								}else if (strCompanyName != "" && strLocation != ""){
-									rs = con.getRs("SELECT * FROM job WHERE companyName='"+strCompanyName+"' AND location='"+strLocation+"'");
+									rs = con.getRs("SELECT * FROM job WHERE companyName LIKE '"+"%"+strCompanyName+"%"+"' AND location LIKE '"+"%"+strLocation+"%"+"'");
 								}else if (strJobTitle != "" && strLocation != ""){
-									rs = con.getRs("SELECT * FROM job WHERE jobTitle='"+strJobTitle+"' AND location='"+strLocation+"'");
+									rs = con.getRs("SELECT * FROM job WHERE jobTitle LIKE '"+"%"+strJobTitle+"%"+"' AND location LIKE '"+"%"+strLocation+"%"+"'");
 								}else if (strJobTitle != ""){
-									rs = con.getRs("SELECT * FROM job WHERE jobTitle='"+strJobTitle+"'");
+									rs = con.getRs("SELECT * FROM job WHERE jobTitle LIKE '"+"%"+strJobTitle+"%"+"'");
 								}else if (strCompanyName != ""){
-									rs = con.getRs("SELECT * FROM job WHERE companyName='"+strCompanyName+"'");
+									rs = con.getRs("SELECT * FROM job WHERE companyName LIKE '"+"%"+strCompanyName+"%"+"'");
 								}else if (strLocation != ""){
-									rs = con.getRs("SELECT * FROM job WHERE location='"+strLocation+"'");
+									rs = con.getRs("SELECT * FROM job WHERE location LIKE '"+"%"+strLocation+"%"+"'");
 								}
 								
 								while (rs.next()){
@@ -173,7 +173,7 @@
 						</div>
 					</div>
 					<!--Pagination-->
-					<div>
+					<!-- <div>
 						<ul class="pagination">
 							<li class="previous"><a href="#fakelink"
 								class="fui-arrow-left"></a></li>
@@ -198,7 +198,7 @@
 								</ul></li>
 							<li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
 						</ul>
-					</div>
+					</div> -->
 
 
 				</div>

@@ -47,7 +47,7 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 					data-target="#navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         </button>
-        <span class="navbar-brand" ><strong><a href="http://localhost:8080/jobs4U">Jobs4U</a></strong></span>        
+        <span class="navbar-brand" ><strong><a href="http://localhost:8080/Jobs4U/student/profile-view.jsp">Jobs4U</a></strong></span>        
       </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -89,6 +89,11 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
               <li class=" active">
                 <a href="job-listing.jsp">
                   Jobs
+                </a>
+              </li>
+              <li>
+                <a href="career-services.jsp">
+                  Career Services
                 </a>
               </li>
               <li>

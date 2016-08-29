@@ -48,7 +48,7 @@ ResultSet rs=con.getRs("SELECT * FROM Recruiter WHERE recEmail='"+strEmail+"'");
 					data-target="#navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         </button>
-        <span class="navbar-brand"><strong><a href="http://localhost:8080/Jobs4U">Jobs4U</a></strong></span>
+        <span class="navbar-brand"><strong><a href="http://localhost:8080/Jobs4U/company/job-manage.jsp">Jobs4U</a></strong></span>
       </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -122,6 +122,7 @@ ResultSet rs=con.getRs("SELECT * FROM Recruiter WHERE recEmail='"+strEmail+"'");
 						<a href="emp-login-signup.html" class="btn btn-block btn-danger">Log Out</a>
 					</div>
 				</div>
+				<br></br>
 				<section>
 				<div class="col-md-2 col-sm-4">
 					<form class="form-group" role="form" action="emp-account-delete.jsp">

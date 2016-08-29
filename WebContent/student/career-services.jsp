@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="com.linkedus.db.Conn"%>
+<%@ page import="com.jobs4U.db.Conn"%>
 <%@ page import="java.sql.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
@@ -46,7 +46,7 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 					data-target="#navbar-collapse">
         	<span class="sr-only">Toggle navigation</span>
         </button>
-        <span class="navbar-brand">Linked<strong>Us</strong>.org </span>
+        <span class="navbar-brand"><strong><a href="http://localhost:8080/Jobs4U/student/profile-view.jsp">Jobs4U</a></strong></span>
       </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,18 +75,39 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
                   Upload Resume
                 </a>
               </li>
+              
+            </ul>
+          </li>
+          <li class="dropdown active">
+            <a href="profile-view.jsp"
+						class="dropdown-toggle" data-toggle="dropdown">
+              <i
+							class="fa fa-user"></i>&nbsp;&nbsp; Job <span class="caret"></span>
+
+            </a>
+            <ul class="dropdown-menu">
+              <li class=" active">
+                <a href="job-listing.jsp">
+                  Jobs
+                </a>
+              </li>
               <li>
                 <a href="career-services.jsp">
                   Career Services
                 </a>
               </li>
+	      <li>
+                <a href="view-saved-jobs.jsp">
+                  Saved Jobs
+                </a>
+              </li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <a href="job-listing.jsp">
               <i class="fa fa-briefcase"></i>&nbsp;&nbsp;Jobs
             </a>
-          </li>
+          </li> -->
           <li>
             <a href="account.jsp">
               <i class="fa fa-gear"></i>&nbsp;&nbsp;Account
@@ -147,8 +168,6 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 						</div>
 						<div class="panel-body">
 							<div class="row">
-							<p> Meeting Date:
-									<input type="text" id="datepicker"> </p>
 								<div class="col-sm-12">
 									
 									Drop-in hours are :<br>
@@ -160,7 +179,7 @@ ResultSet rs=con.getRs("SELECT * FROM student WHERE email='"+strEmail+"'");
 									Appointments outside of drop-in hours can be made by contacting careerservices@itu.edu</h5>
 									
 								</div>
-								<input type="text" id="datepicker" style="">
+								
 							</div>
 						</div>
 					</div>

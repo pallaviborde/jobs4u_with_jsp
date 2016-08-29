@@ -44,7 +44,7 @@ String strEmail=(String)session.getAttribute("email");
 					data-target="#navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         </button>
-        <span class="navbar-brand">Linked<strong>Us</strong>.org </span>
+        <span class="navbar-brand"><strong>Jobs4U</strong></span>
       </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->

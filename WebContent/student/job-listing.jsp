@@ -44,7 +44,8 @@
 					data-target="#navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 				</button>
-				<span class="navbar-brand"><strong><a href="http://localhost:8080/linkedus">Jobs4U</a></strong>
+				<span class="navbar-brand"><strong>
+				<a href="http://localhost:8080/Jobs4U/student/profile-view.jsp">Jobs4U</a></strong>
 				</span>
 			</div>
 
@@ -72,6 +73,11 @@
               <li class=" active">
                 <a href="job-listing.jsp">
                   Jobs
+                </a>
+              </li>
+              <li>
+                <a href="career-services.jsp">
+                  Career Services
                 </a>
               </li>
               <li>
@@ -194,7 +200,7 @@
 						</div>
 					</div>
 					<!--Pagination-->
-					<div>
+					<!-- <div>
 						<ul class="pagination">
 							<li class="previous"><a href="#fakelink"
 								class="fui-arrow-left"></a></li>
@@ -220,7 +226,7 @@
 							<li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
 						</ul>
 					</div>
-
+ -->
 
 				</div>
 			</div>

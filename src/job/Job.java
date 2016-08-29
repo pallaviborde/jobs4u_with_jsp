@@ -3,7 +3,7 @@ package job;
 /**
  * <p>Title: </p>
  * <p>Description: Job type</p>
- * @author Linkedus.org
+ * @author Jobs4U
  */
 
 public class Job {

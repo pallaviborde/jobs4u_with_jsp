@@ -101,7 +101,7 @@ if((contentType != null) && (contentType.indexOf("multipart/form-data") >=0 )){
 					data-target="#navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         </button>
-        <span class="navbar-brand"><strong><a href="http://localhost:8080/linkedus">Jobs4U</a></strong></span>
+        <span class="navbar-brand"><strong><a href="http://localhost:8080/Jobs4U/student/profile-view.jsp">Jobs4U</a></strong></span>
       </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -142,6 +142,11 @@ if((contentType != null) && (contentType.indexOf("multipart/form-data") >=0 )){
               <li class=" active">
                 <a href="job-listing.jsp">
                   Jobs
+                </a>
+              </li>
+              <li>
+                <a href="career-services.jsp">
+                  Career Services
                 </a>
               </li>
               <li>
