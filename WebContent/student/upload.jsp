@@ -194,7 +194,7 @@ if((contentType != null) && (contentType.indexOf("multipart/form-data") >=0 )){
 					<input type="file" name="file" value="">
 								<p class="help-block">
 									Upload your resume. <br> 
-									Accepted format is .txt only. <br> 
+									Accepted format is .pdf/.doc only. <br> 
 									The size should be less than 5 MB.
 								</p>
 								<input class="btn btn-primary btn-wide row-space-2 row-space-top-2 text-capitalize"

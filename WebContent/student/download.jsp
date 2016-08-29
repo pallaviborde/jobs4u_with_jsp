@@ -152,7 +152,6 @@ if (!exists) {
 					<input type="file" name="file" value="">
 								<p class="help-block">
 									Upload your resume. <br> 
-									Accepted format is .pdf only. <br> 
 									The size should be less than 5 MB.
 								</p>
 								<input class="btn btn-primary btn-wide row-space-2 row-space-top-2 text-capitalize"
