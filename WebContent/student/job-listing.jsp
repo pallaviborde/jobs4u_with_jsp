@@ -194,9 +194,7 @@
 							<%
 								}
 							%>
-							<hr>
-							<hr>
-							<hr>
+							
 						</div>
 					</div>
 					<!--Pagination-->

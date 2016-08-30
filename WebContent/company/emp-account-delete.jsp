@@ -19,12 +19,12 @@
 		Data data = new Data();
 		intT = data.delete("DELETE FROM Recruiter WHERE recEmail='"+ strEmail + "'");
 		if (intT <= 0) {
-			out.print("<script>alert('Not deleted.');document.location='stu-login-signup.html';</script>");
-			response.sendRedirect("emp-login-signup.html");
+			out.print("<script>alert('Not deleted.');document.location='emp-login-signup.html';</script>");
+			//response.sendRedirect("emp-login-signup.html");
 			return;
 		} else {
-			out.print("<script>alert('Deleted.');document.location='stu-login-signup.html';</script>");
-			response.sendRedirect("emp-login-signup.html");
+			out.print("<script>alert('Deleted.');document.location='emp-login-signup.html';</script>");
+			//response.sendRedirect("emp-login-signup.html");
 			
 		}
 	}

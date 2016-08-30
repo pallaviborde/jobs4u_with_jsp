@@ -24,7 +24,7 @@
 			return;
 		} else {
 			out.print("<script>alert('Deleted.');document.location='stu-login-signup.html';</script>");
-			response.sendRedirect("stu-login-signup.html");
+		response.sendRedirect("stu-login-signup.html");
 			
 		}
 	}

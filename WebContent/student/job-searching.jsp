@@ -59,10 +59,34 @@
 							<li><a href="profile-edit.jsp"> Edit Profile </a></li>
 							<li><a href="upload.html"> Upload Resume </a></li>
 						</ul></li>
-					<li class="active"><a href="job-listing.jsp"> <i
-							class="fa fa-briefcase"></i>&nbsp;&nbsp;Jobs
-					</a></li>
-					<li><a href="account.jsp"> <i class="fa fa-gear"></i>&nbsp;&nbsp;Account
+						 <li class="dropdown active">
+            <a href="profile-view.jsp"
+						class="dropdown-toggle" data-toggle="dropdown">
+              <i
+							class="fa fa-user"></i>&nbsp;&nbsp; Job <span class="caret"></span>
+
+            </a>
+            <ul class="dropdown-menu">
+              <li class=" active">
+                <a href="job-listing.jsp">
+                  Jobs
+                </a>
+              </li>
+              <li>
+                <a href="career-services.jsp">
+                  Career Services
+                </a>
+              </li>
+              <li>
+                <a href="view-saved-jobs.jsp">
+                  Saved Jobs
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+						
+						<li><a href="account.jsp"> <i class="fa fa-gear"></i>&nbsp;&nbsp;Account
 					</a></li>
 				</ul>
 			</div>

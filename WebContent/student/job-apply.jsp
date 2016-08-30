@@ -59,9 +59,9 @@
 				Message msg = new MimeMessage(session_mail);
 
 				msg.setFrom(new InternetAddress("shaluravilla"));
-				InternetAddress[] toAddresses = { new InternetAddress("shaluravilla@gmail.com") }; 
+				InternetAddress[] toAddresses = { new InternetAddress("bangswati527@students.itu.edu") }; 
 				msg.setRecipients(Message.RecipientType.TO, toAddresses);
-				msg.setSubject("reg. your job application");
+				msg.setSubject("Reg. your job application");
 				msg.setSentDate(new java.util.Date());
 				msg.setText("Thanks for expressing the interest in the position.Your application has been successfully received."); // to change
 

@@ -115,70 +115,14 @@
 							%>
           
           
-          <!--Pagination-->
+           <!--Pagination-->
           
-          <div class="">
-            <ul class="pagination">
-              <li class="previous disabled">
-                <a href="#fakelink" class="fui-arrow-left">
-                </a>
-              </li>
-              <li class="active">
-                <a href="#fakelink">
-                  1
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  2
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  3
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  4
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  5
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  6
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  7
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  8
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  9
-                </a>
-              </li>
-              <li>
-                <a href="#fakelink">
-                  10
-                </a>
-              </li>
-              <!-- Make dropdown appear above pagination -->
-              <li class="pagination-dropdown dropup">
+            <!-- Make dropdown appear above pagination -->
+             <!--  <li class="pagination-dropdown dropup">
                 <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fui-triangle-up"></i>
                 </a>
-                <!-- Dropdown menu -->
+                Dropdown menu
                 <ul class="dropdown-menu">
                   <li>
                     <a href="#fakelink">
@@ -201,7 +145,7 @@
                 <a href="#fakelink" class="fui-arrow-right">
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
